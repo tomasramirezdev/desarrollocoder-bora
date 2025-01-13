@@ -1,0 +1,665 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFBFC;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Sección Hero */
+
+.hero-image-nos { 
+  width: 50%;  /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  max-width: 300px;  /* Puedes ajustar el tamaño máximo según lo necesites */
+  object-fit: contain; /* Asegura que la imagen se mantenga proporcional */
+  justify-content: center;  /* Centra la imagen horizontalmente */
+ align-items: center;      /* Centra la imagen verticalmente */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 3px 0px 7px rgb(12, 12, 12, 0.3);
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero-text h2 {
+    font-size: 95px;
+    font-weight: 900;
+    margin: 10px 0;
+    text-transform: uppercase;
+    
+}
+
+.hero-text p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Sección Planea tu viaje */
+.plan {
+    margin: 40px auto;
+    text-align: left;
+    width: 1232px;
+}
+
+.plan-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.plan-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.plan-content p {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #1D81AD;
+    color: #112211;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1D81AD;
+    color: white;
+}
+
+/* Sección de tours */
+.tours {
+    width: 1232px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin: 20px auto;
+}
+
+.tour-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 16px;
+    min-height: 122px;
+}
+
+.tour-card:hover {
+    background-color: #ececec;
+    color: white;
+}
+
+
+.tour-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.tour-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tour-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #112211;
+    opacity: 0.7;
+}
+
+.tour-type {
+    font-size: 14px;
+    font-weight: 500;
+    color: #112211;
+}
+
+.container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.card {
+    width: 450px;
+    height: 608px;
+    position: relative;
+}
+
+.background-overlay {
+    width: 425px;
+    height: 586px;
+    position: absolute;
+    background: rgba(74, 187, 236, 0.50);
+    left: 25px;
+    top: 22px;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 24px;
+    position: absolute;
+    background: white;
+    box-shadow: 2px 4px 16px rgba(17, 34, 17, 0.10);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.quote {
+    height: 80px;
+    color: #112211;
+    font-size: 24px;
+    font-family: ABeeZee;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.quote-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.quote-description {
+    height: 37px;
+    opacity: 0.50;
+    color: #112211;
+    font-size: 14px;
+    font-family: Montserrat}
+
+/* seccion de reviews */
+    .reviews-container {
+        margin-top: 40px;  
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .reviews-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 24px;
+    }
+    
+    .reviews-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .title {
+        font-size: 32px;
+        font-weight: 600;
+        color: black;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+        color: black;
+    }
+    
+    .view-all-button {
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: 1px solid #8DD3BB;
+        color: #112211;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 500;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .view-all-button:hover {
+        background-color: #1D81AD;
+        color: white;
+    }
+    /* Estilos para las imágenes de la sección Reviews */
+.review-image-container {
+    width: 300px; /* Tamaño del contenedor de la imagen */
+    height: 200px; /* Tamaño del contenedor de la imagen */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 16px; /* Espacio superior */
+}
+
+.review-image {
+    width: 100%; /* La imagen ocupará todo el contenedor */
+    height: 100%; /* La imagen ocupará todo el contenedor */
+    object-fit: cover; /* La imagen se ajustará al contenedor sin distorsionarse */
+}
+
+
+
+/*css para la pagaina de contacto*/
+:root {
+    --primary-color: #1D81AD;
+    --secondary-color: #4ABBED;
+    --background-color: #FAFBFC;
+    --text-color: #112211;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 104px;
+    align-items: center;
+    background: white;
+}
+
+.nav a {
+    margin: 0 16px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.contact-page {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.contact-form, .contact-inquiry {
+    margin: 32px 104px;
+    background: white;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+}
+
+.contact-form h1, .contact-inquiry h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}  
+textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid var(--secondary-color);  
+}
+
+form {
+    width: 100%;
+    max-width: 1100px; 
+    margin: 0 auto; /* Centra el formulario */
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px; /* Espaciado entre grupos */
+}
+
+.form-group label {
+    flex: 1; /* El label ocupa un espacio proporcional */
+    font-weight: bold;
+    margin-right: 16px; /* Espaciado entre label y input */
+}
+
+.form-group input {
+    flex: 2; /* El input es más ancho */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+}
+
+.form-group button {
+    margin-left: 16px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-group button:hover {
+    background-color: #0056b3; /* Oscurece el botón al pasar el mouse */
+}
+
+.logo {
+    width: 100px;
+}
+
+.currency {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto e imagen */
+    gap: 8px; /* Espacio entre el texto y la imagen */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Resalta el texto */
+    color: #333; /* Color del texto */
+}
+
+.currency img {
+    width: 24px; /* Tamaño de la imagen */
+    height: 24px;
+    border-radius: 50%; /* Redondea la imagen */
+}
+
+
+
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #4abbec;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  .footer div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer h3 {
+    font-family: "ABeeZee-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--blackish-green);
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    font-family: var(--montserrat-medium-14px-font-family);
+    font-weight: var(--montserrat-medium-14px-font-weight);
+    color: var(--blackish-green);
+    font-size: var(--montserrat-medium-14px-font-size);
+    opacity: 0.7;
+  }
+  
+  /* tours */
+
+  .content {
+    display: flex  1;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 20px;
+  }
+  
+  .tour-section-tours {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 24px;
+  }
+  
+  .tour-category-tours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--neutrals);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  }
+  
+  .category-title-tours {
+    font-family: var(--montserrat-semibold-16px-font-family);
+    font-weight: var(--montserrat-semibold-16px-font-weight);
+    color: var(--blackish-green);
+    font-size: var(--montserrat-semibold-16px-font-size);
+  }
+  
+  .category-type-tours {
+    font-family: var(--montserrat-regular-14px-font-family);
+    font-weight: var(--montserrat-regular-14px-font-weight);
+    color: var(--blackish-green);
+    font-size: var(--montserrat-regular-14px-font-size);
+    opacity: 0.4;
+  }
+  
+  .tour-details-tours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .tour-card-tours {
+    display: flex;
+    width: 100%;
+    max-width: 1113px;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  }
+  
+  .tour-image-tours {
+    width: 505px;
+    height: 396px;
+    object-fit: cover;
+  }
+  
+  .tour-info-tours {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-color: var(--neutrals);
+    border-radius: 0px 12px 12px 0px;
+  }
+  
+  .tour-title-tours {
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--blackish-green);
+    font-size: 20px;
+  }
+  
+  .tour-location-tours {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .location-icon-tours {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .tour-rating-tours {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .rating-button-tours {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #1d81ad;
+    font-family: var(--montserrat-medium-12px-font-family);
+    font-weight: var(--montserrat-medium-12px-font-weight);
+    color: var(--blackish-green);
+    font-size: var(--montserrat-medium-12px-font-size);
+  }
+  
+  .rating-text-tours {
+    font-family: var(--montserrat-bold-12px-font-family);
+    font-weight: var(--montserrat-bold-12px-font-weight);
+    color: var(--blackish-green);
+    font-size: var(--montserrat-bold-12px-font-size);
+  }
+  
+  .tour-price-tours {
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #4abbec;
+    font-size: 24px;
+    text-align: right;
+  }
+  
+  .tour-description-tours {
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 12px;
+  }
+  
+  .tour-actions-tours {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .favorite-button-tours {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #4abbec;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .favorite-icon-tours {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .book-button-tours {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #4abbec;
+    border-radius: 4px;
+    font-family: var(--montserrat-semibold-14px-font-family);
+    font-weight: var(--montserrat-semibold-14px-font-weight);
+    color: var(--blackish-green);
+    font-size: var(--montserrat-semibold-14px-font-size);
+    cursor: pointer;
+  }
+  
+  .load-more-button-tours {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #1d81ad;
+    border-radius: 4px;
+    font-family: var(--montserrat-semibold-14px-font-family);
+    font-weight: var(--montserrat-semibold-14px-font-weight);
+    color: var(--neutrals);
+    font-size: var(--montserrat-semibold-14px-font-size);
+    cursor: pointer;
+  }
