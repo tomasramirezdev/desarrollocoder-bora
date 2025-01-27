@@ -306,13 +306,6 @@ body {
     --font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    
-    margin: 0;
-    font-family: var(--font-family);
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
 
 .header {
     display: flex;
@@ -447,7 +440,8 @@ form {
     justify-content: space-between;
     padding: 32px;
     background-color: #4abbec;
-    border-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   }
   
@@ -560,9 +554,9 @@ form {
   }
   
   .tour-location-tours {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
   }
   
   .location-icon-tours {
@@ -663,3 +657,12 @@ form {
     font-size: var(--montserrat-semibold-14px-font-size);
     cursor: pointer;
   }
+
+.tour-location-tours {
+    display: inline-block;
+    vertical-align: middle;
+    gap: 8px;
+    font-size: 1.2em;
+    line-height: 1;
+    line-height: 1.5;
+}
