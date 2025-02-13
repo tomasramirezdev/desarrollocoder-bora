@@ -1,19 +1,31 @@
 /* Estilos generales */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FAFBFC;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FAFBFC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 104px;
+  align-items: center;
+  background: white;
+  position: relative;
+  height: 100px;
+}
+
 
 .main-container {
     width: 1440px;
     margin: 0 auto;
     padding: 20px;
-    flex-grow: 1;
+    flex: 1;
 }
 
 /* Sección Hero */
@@ -50,8 +62,8 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 48px;
+    font-weight: 900;
     margin: 0;
 }
 
@@ -167,30 +179,31 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
+    min-height: 100vh;
 }
 
 .card {
     width: 450px;
     height: 608px;
     position: relative;
-}
+    border-color: transparent;}
 
 .background-overlay {
-    width: 425px;
+    width: 350px;
     height: 586px;
     position: absolute;
     background: rgba(74, 187, 236, 0.50);
     left: 25px;
     top: 22px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .content {
     padding: 24px;
-    position: absolute;
+    position: relative;
     background: white;
     box-shadow: 2px 4px 16px rgba(17, 34, 17, 0.10);
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -224,7 +237,7 @@ body {
 }
 
 .quote-description {
-    height: 37px;
+    height: 40px;
     opacity: 0.50;
     color: #112211;
     font-size: 14px;
@@ -307,13 +320,7 @@ body {
 }
 
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 104px;
-    align-items: center;
-    background: white;
-}
+
 
 .nav a {
     margin: 0 16px;
@@ -597,6 +604,7 @@ form {
     color: #4abbec;
     font-size: 24px;
     text-align: right;
+    display: flex;
   }
   
   .tour-description-tours {
@@ -854,7 +862,7 @@ form {
   }
   
   /* Responsivo */
-  @media (max-width: 768px) {
+  @media (max-width: 60px) {
     .location-rating {
       flex-direction: column;
       align-items: center;
@@ -879,3 +887,41 @@ form {
     width: 1%;
     
   }
+
+  .pricing
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .departure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.departure-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.departure-info img {
+    width: 60px; /* Tamaño pequeño de la imagen */
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.departure-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
